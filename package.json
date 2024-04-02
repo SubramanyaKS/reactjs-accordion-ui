@@ -1,0 +1,46 @@
+{
+  "name": "reactjs-accordion-ui",
+  "version": "1.0.7",
+  "description": "A accordition component created using react and typescript",
+  "main": "dist/cjs/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "Accordition-component",
+    "React",
+    "Typescript"
+  ],"repository": {
+    "type": "git",
+    "url": "https://github.com/SubramanyaKS//reactjs-accordion-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/SubramanyaKS//reactjs-accordion-ui/issues"
+  },
+
+  "types": "dist/index.d.ts",
+  "author": "SubramanyaKS",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.2",
+    "@types/react": "^18.2.73",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.13.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@types/rollup-plugin-peer-deps-external": "^2.2.5"
+  }
+}
