@@ -20,6 +20,8 @@ yarn add reactjs-accordion-ui
 
 ## Usage
 
+The required prop is items which is as shown below
+
 ```js
 import React from 'react';
 import {ReactAccordion} from 'reactjs-accordion-ui';
@@ -32,7 +34,28 @@ const MyApp = () => {
   ];
 
   return (
-    <ReactAccordion items={items} />
+    <ReactAccordion items={items}  />
+  );
+};
+
+export default MyApp;
+
+```
+you can pass the props defined in option section as per your requirement
+
+```js
+import React from 'react';
+import {ReactAccordion} from 'reactjs-accordion-ui';
+
+const MyApp = () => {
+  const items = [
+    { title: 'Section 1', content: 'Content for section 1' },
+    { title: 'Section 2', content: 'Content for section 2' },
+    { title: 'Section 3', content: 'Content for section 3' },
+  ];
+
+  return (
+    <ReactAccordion items={items} width={"700px"} headerBackgroundColor={'#0f0'} />
   );
 };
 
@@ -45,7 +68,7 @@ The `ReactAccordion` component accepts the following props:
 
 | Option | type | Description |
 | :---: | :---: | :---: |
-| `items` | `Array` | An array of objects representing the accordion items. Each object should have a `title` and `content` property.. |
+| `items` | `Array` | An array of objects representing the accordion items. Each object should have a `title` and `content` property. |
 | `width` | `string` | The width of the accordion component. |
 |`headerBackgroundColor`|`string`|The background color of the accordion header.|
 |`contentBackgroundColor`|`string`|The background color of the accordion content.|
@@ -56,3 +79,6 @@ The `ReactAccordion` component accepts the following props:
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
