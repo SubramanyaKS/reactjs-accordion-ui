@@ -62,18 +62,41 @@ const MyApp = () => {
 export default MyApp;
 
 ```
+you can also give a `div` to content prop as shown below.
+
+```js
+import React from 'react';
+import {ReactAccordion} from 'reactjs-accordion-ui';
+
+const MyApp = () => {
+  const items = [
+    { title: 'Section 1', content: <div>Hi</div> },
+    { title: 'Section 2', content: 'Content for section 2' },
+    { title: 'Section 3', content: 'Content for section 3' },
+  ];
+
+  return (
+    <ReactAccordion items={items} width={"700px"} headerBackgroundColor={'#0f0'} />
+  );
+};
+
+export default MyApp;
+
+```
+
+
 ### Options
 
 The `ReactAccordion` component accepts the following props:
 
 | Option | type | Description |
 | :---: | :---: | :---: |
-| `items` | `Array` | An array of objects representing the accordion items. Each object should have a `title` and `content` property. |
+| `items` | `Array` | An array of objects representing the accordion items. Each object should have a `title`type(string) and `content`(type ReactNode) property. |
 | `width` | `string` | The width of the accordion component. |
 |`headerBackgroundColor`|`string`|The background color of the accordion header.|
 |`contentBackgroundColor`|`string`|The background color of the accordion content.|
-|`offIcon`|`ReactNode`|The icon when the content is not shown|
-|`onIcon`|`ReactNode`|The icon when the content is shown|
+|`colapseIcon`|`ReactNode`|The icon display when an accordion item is expanded|
+|`expandIcon`|`ReactNode`|The icon content to display when an accordion item is collapsed|
 
 
 ## Author
@@ -81,4 +104,4 @@ The `ReactAccordion` component accepts the following props:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
