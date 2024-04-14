@@ -97,7 +97,11 @@ The `ReactAccordion` component accepts the following props:
 |`contentBackgroundColor`|`string`|The background color of the accordion content.|
 |`colapseIcon`|`ReactNode`|The icon display when an accordion item is expanded|
 |`expandIcon`|`ReactNode`|The icon content to display when an accordion item is collapsed|
+|`id`|`string`|The value represents the id attribute of the ReactAccordion component|
 
+## Contribution
+
+We welcome contributions! If you'd like to contribute to reactjs-toggleswitch, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/reactjs-accordion-ui/blob/main/CONTRIBUTING.md).
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
