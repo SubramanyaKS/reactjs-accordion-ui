@@ -9,6 +9,7 @@ interface AccordionItem {
 interface AccordionProps {
   items: AccordionItem[];
   width?: string;
+  id?:string;
   headerBackgroundColor?: string;
   contentBackgroundColor?: string;
   collapseIcon?: React.ReactNode;
@@ -21,7 +22,8 @@ const ReactAccordion: React.FC<AccordionProps> = ({
   headerBackgroundColor = "#ccc",
   contentBackgroundColor = "#fff",
   expandIcon,
-  collapseIcon
+  collapseIcon,
+  id
 }) => {
   const [openItems, setOpenItems] = useState<boolean[]>(Array(items.length).fill(false));
 
@@ -32,7 +34,7 @@ const ReactAccordion: React.FC<AccordionProps> = ({
   };
 
   return (
-    <div className="accordion" style={{ width: width }}>
+    <div id={id} className="accordion" style={{ width: width }}>
       {items.map((item, index) => (
         <div key={index} className="accordion-item">
           <div style={{ display: "flex", backgroundColor: headerBackgroundColor }}>
