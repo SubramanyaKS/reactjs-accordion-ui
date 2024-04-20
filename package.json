@@ -1,6 +1,6 @@
 {
   "name": "reactjs-accordion-ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A accordition component created using react and typescript",
   "main": "dist/cjs/index.js",
   "type": "module",
